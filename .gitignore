@@ -1,0 +1,14 @@
+*.xdv
+*.gz
+*.gz
+*.out
+*.log
+*.fls
+*.fdb_latexmk
+*.blg
+*.bcf
+*.bbl-SAVE-ERROR
+*.bbl
+*.aux
+*.cut
+*.xml
