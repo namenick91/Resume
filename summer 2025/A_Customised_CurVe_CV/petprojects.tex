@@ -1,75 +1,49 @@
+\begin{rubric}{Проектная деятельность}
 
-% \makerubrichead{Проекты}
-
-% \begin{itemize}
-%     \item \textbf{Forecasting Transformers (Informer, Autoformer, Performer)} - 
-%     долгосрочный прогноз мультивариантных рядов; собрал воспроизводимый 
-%     PyTorch-pipeline, интегрировал компоненты из SOTA-моделей в единую архитектуру, 
-%     провел абляции модулей ConvStem/FAVOR+/SeriesDecomposition (вклад: ΔMAE/ΔRMSE); 
-%     \textbf{MAE/MSE/RMSE: [{\color{red}-/-/-}]} (avg@24--720), 
-%     vs baseline: \textbf{$-$[{\color{red}-/-/-}Δ]} (ETTh1 датасет). \\
-%     \item \textbf{Simpsons Character Classification (EfficientNetV2-S)} - 
-%     multi-class классификация изображений, двухфазный fine-tuning, 
-%     RandAugment/CutMix/MixUp, AdamW+Cosine, early stopping; \textbf{Micro-F1: 0.99574}. \\
-%     \item \textbf{Semantic Segmentation (U-Net/SegNet)} - 
-%     бинарная сегментация мед. изображений; BCE/Dice/Focal, 
-%     трекинг IoU, Early Stopping; \textbf{IoU(SegNet+Dice): 0.804}. \\
-%     \item \textbf{Customer Churn (CatBoost)} - 
-%     бинарная классификация оттока клиентов; очистка/типизация, фичеинжиниринг, 
-%     k-fold, Optuna; \textbf{ROC-AUC: 0.859} \\
-%     \item \textbf{Game of Thrones Survival (RandomForest)} - 
-%     бинарная классификация; препроцессинг, построение кастомного sklearn-пайплайна,
-%     тьюнинг гиперпараметров; RF после бенчмарка моделей; 
-%     \textbf{ROC-AUC: 0.7953, Accuracy: 0.8045}
-% \end{itemize}
-
-\begin{rubric}{Проекты}
-% \noentry{2014 -- 2015}
 \entry*%
-	\textbf{Forecasting Transformers (Informer, Autoformer, Performer)} - 
-    долгосрочный прогноз мультивариантных рядов; собрал воспроизводимый 
-    PyTorch-pipeline, интегрировал компоненты из SOTA-моделей в единую архитектуру, 
-    провел абляции модулей ConvStem/FAVOR+/SeriesDecomposition (вклад: ΔMAE/ΔRMSE); 
-    \textbf{MAE/MSE/RMSE: [{\color{red}-/-/-}]} (avg@24--720), 
-    vs baseline: \textbf{$-$[{\color{red}-/-/-}Δ]} (ETTh1 датасет).
+    % \textbf{Forecasting Transformers (Informer, Autoformer, Performer)} -
+    % долгосрочный прогноз мультивариантных рядов; собрал воспроизводимый
+    % PyTorch-pipeline, интегрировал компоненты из SOTA-моделей в единую архитектуру,
+    % провел абляции модулей ConvStem/FAVOR+/SeriesDecomposition (вклад: ΔMAE/ΔRMSE);
+    % \textbf{MAE/MSE/RMSE: [0.471/0.447/0.668]} (avg@24--720),
+    % vs baseline: \textbf{$-$[0.259/0.452/0.266Δ]} (ETTh1 датасет).
+
+    \textbf{Forecasting Transformers (Informer, Autoformer, Performer)} - 
+    долгосрочный прогноз мультивариантных рядов; собрал воспроизводимый PyTorch-pipeline, 
+    интегрировал компоненты из SOTA-моделей в единую архитектуру, провёл абляции модулей 
+    ConvStem/FAVOR+/SeriesDecomposition. 
+
+    \textbf{ETTh1 датасет; avg@24--720: MAE/MSE/RMSE: 0.471/0.447/0.668}. 
+
+    \textbf{Улучшение относительно baseline (Informer): 
+    $\Delta$0.259/$\Delta$0.452/$\Delta$0.265}.
+
+
 \entry*%
 	\textbf{Simpsons Character Classification (EfficientNetV2-S)} - 
     multi-class классификация изображений, двухфазный fine-tuning, 
-    RandAugment/CutMix/MixUp, AdamW+Cosine, early stopping; \textbf{Micro-F1: 0.99574}.
+    RandAugment/CutMix/MixUp, AdamW+Cosine, early stopping; 
+    
+    \textbf{Micro-F1: 0.99574}.
+
 \entry*%
 	\textbf{Semantic Segmentation (U-Net/SegNet)} - 
     бинарная сегментация мед. изображений; BCE/Dice/Focal, 
-    трекинг IoU, Early Stopping; \textbf{IoU(SegNet+Dice): 0.804}.
+    трекинг IoU, Early Stopping; 
+    
+    \textbf{IoU(SegNet+Dice): 0.804}.
+
 \entry*%
 	\textbf{Customer Churn (CatBoost)} - 
     бинарная классификация оттока клиентов; очистка/типизация, фичеинжиниринг, 
-    k-fold, Optuna; \textbf{ROC-AUC: 0.859}.
+    k-fold, Optuna; 
+    
+    \textbf{ROC-AUC: 0.859}.
+
 \entry*%
 	\textbf{Game of Thrones Survival (RandomForest)} - 
     бинарная классификация; препроцессинг, построение кастомного sklearn-пайплайна,
     тьюнинг гиперпараметров; RF после бенчмарка моделей; 
+    
     \textbf{ROC-AUC: 0.7953, Accuracy: 0.8045}.
 \end{rubric}
-
-% \begin{rubric}{Проекты}
-% % \noentry{2014 -- 2015}
-% \entry*[\textbf{Forecasting Transformers (Informer, Autoformer, Performer)}]%
-%     долгосрочный прогноз мультивариантных рядов; собрал воспроизводимый 
-%     PyTorch-pipeline, интегрировал компоненты из SOTA-моделей в единую архитектуру, 
-%     провел абляции модулей ConvStem/FAVOR+/SeriesDecomposition (вклад: ΔMAE/ΔRMSE); 
-%     \textbf{MAE/MSE/RMSE: [{\color{red}-/-/-}]} (avg@24--720), 
-%     vs baseline: \textbf{$-$[{\color{red}-/-/-}Δ]} (ETTh1 датасет).
-% \entry*[\textbf{Simpsons Character Classification (EfficientNetV2-S)}]%
-%     multi-class классификация изображений, двухфазный fine-tuning, 
-%     RandAugment/CutMix/MixUp, AdamW+Cosine, early stopping; \textbf{Micro-F1: 0.99574}.
-% \entry*[\textbf{Semantic Segmentation (U-Net/SegNet)}]%
-%     бинарная сегментация мед. изображений; BCE/Dice/Focal, 
-%     трекинг IoU, Early Stopping; \textbf{IoU(SegNet+Dice): 0.804}.
-% \entry*[\textbf{Customer Churn (CatBoost)}]%
-%     бинарная классификация оттока клиентов; очистка/типизация, фичеинжиниринг, 
-%     k-fold, Optuna; \textbf{ROC-AUC: 0.859}
-% \entry*[\textbf{Game of Thrones Survival (RandomForest)}]% 
-%     бинарная классификация; препроцессинг, построение кастомного sklearn-пайплайна,
-%     тьюнинг гиперпараметров; RF после бенчмарка моделей; 
-%     \textbf{ROC-AUC: 0.7953, Accuracy: 0.8045}
-% \end{rubric}
