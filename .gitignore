@@ -12,3 +12,5 @@
 *.aux
 *.cut
 *.xml
+
+pdf2png.py

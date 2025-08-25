@@ -12,17 +12,18 @@
     долгосрочный прогноз мультивариантных рядов; собрал воспроизводимый PyTorch-pipeline, 
     интегрировал компоненты из SOTA-моделей в единую архитектуру, провёл абляции модулей 
     ConvStem/FAVOR+/SeriesDecomposition. 
+    (\textit{\href{https://github.com/namenick91/Convformer}{GitHub}})
 
     \textbf{ETTh1 датасет; avg@24--720: MAE/MSE/RMSE: 0.471/0.447/0.668}. 
 
     \textbf{Улучшение относительно baseline (Informer): 
     $\Delta$0.259/$\Delta$0.452/$\Delta$0.265}.
 
-
 \entry*%
 	\textbf{Simpsons Character Classification (EfficientNetV2-S)} - 
     multi-class классификация изображений, двухфазный fine-tuning, 
     RandAugment/CutMix/MixUp, AdamW+Cosine, early stopping; 
+    (\textit{\href{https://github.com/namenick91/ML-Workshelf\#simpsons-character-classification}{GitHub}})
     
     \textbf{Micro-F1: 0.99574}.
 
@@ -30,6 +31,7 @@
 	\textbf{Semantic Segmentation (U-Net/SegNet)} - 
     бинарная сегментация мед. изображений; BCE/Dice/Focal, 
     трекинг IoU, Early Stopping; 
+    (\textit{\href{https://github.com/namenick91/ML-Workshelf\#image-segmentation-with-cnns}{GitHub}})
     
     \textbf{IoU(SegNet+Dice): 0.804}.
 
@@ -37,6 +39,7 @@
 	\textbf{Customer Churn (CatBoost)} - 
     бинарная классификация оттока клиентов; очистка/типизация, фичеинжиниринг, 
     k-fold, Optuna; 
+    (\textit{\href{https://github.com/namenick91/ML-Workshelf\#customer-churn-prediction}{GitHub}})
     
     \textbf{ROC-AUC: 0.859}.
 
@@ -44,6 +47,8 @@
 	\textbf{Game of Thrones Survival (RandomForest)} - 
     бинарная классификация; препроцессинг, построение кастомного sklearn-пайплайна,
     тьюнинг гиперпараметров; RF после бенчмарка моделей; 
+    (\textit{\href{https://github.com/namenick91/ML-Workshelf\#game-of-thrones-character-survival-prediction}{GitHub}})
     
     \textbf{ROC-AUC: 0.7953, Accuracy: 0.8045}.
+
 \end{rubric}
