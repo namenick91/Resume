@@ -1,0 +1,258 @@
+%-------------------------
+% Resume in Latex
+% Author : Harshibar
+% Based off of: https://github.com/jakeryang/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fontawesome
+\usepackage{fontawesome5}
+
+% fixed width
+\usepackage[scale=0.90,lf]{FiraMono}
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+\newcommand{\latinmono}[1]{{\fontencoding{T1}\ttfamily #1}}
+
+
+% custom font: helvetica-style with Cyrillic support
+\usepackage[default,scale=0.92]{opensans}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\setlength{\footskip}{4.1pt}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{0pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-6pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}, itemsep=0pt, topsep=0pt]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, itemsep=0pt, topsep=1pt, parsep=0pt, partopsep=0pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Large Очкин Никита Валерьевич} \\ \vspace{5pt}
+    \small \faPhone* \latinmono{+7 977 194-80-50} \hspace{1pt} $|$
+    \hspace{1pt} \faEnvelope \hspace{2pt} \latinmono{nkt.ochkin@gmail.com} \hspace{1pt} $|$
+    \hspace{1pt} \faGithub \hspace{2pt}
+    \href{https://github.com/namenick91}{\myuline{\latinmono{github.com/namenick91}}} \hspace{1pt} $|$
+    \hspace{1pt} \faMapMarker* \hspace{2pt} Москва
+    \\ \vspace{-3pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{ОБРАЗОВАНИЕ}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {МГТУ им. Н.Э. Баумана, Факультет <<Фундаментальные науки>>}{2022 -- 2026}
+      {Бакалавриат, 02.03.01 <<Математика и компьютерные науки>>}{}
+      	\resumeItemListStart
+    	\resumeItem{\textbf{Профиль:} суперкомпьютерное моделирование и искусственный интеллект в инженерных задачах.}
+      \resumeItem{\textbf{ВКР:} <<Разработка алгоритма вопросно-ответной системы по курсу высшей математики на базе большой языковой модели>>}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{ОПЫТ РАБОТЫ}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Институт системного программирования им. В.\,П.~Иванникова РАН}{янв. 2026 -- н. в.}
+      {Лаборант, 16-й отдел информационных систем}{}
+      \resumeItemListStart
+        \resumeItem{Проведение сравнительного исследования VLM OCR-систем на различных типах документов (6 систем $\times$ 5 сценариев): инференс на GPU A100, метрики под каждый сценарий (CER/WER, PER, CDM).}
+        \resumeItem{Разработка FastAPI-сервиса для парсинга документов поверх PaddleOCR-VL-1.5: vLLM инференс, Docker-развёртывание; результат OCR преобразуется в структурированный граф документа. Micro-CER сервиса -- 3.7\%}
+        \resumeItem{Разработка бенчмарка для выбора VLM, извлекающей данные из разнотипных графиков в табличный вид (chart-to-table), с целью дальнейшего внедрения в сервис: 11 моделей, 5 датасетов, 8 метрик с bootstrap-CI.}
+        \resumeItem{Рецензирование научных статей по анализу документов методами DL.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {МГТУ им. Н.Э. Баумана}{окт. 2024 -- н. в.}
+      {Техник, кафедра ФН-11 <<Вычислительная математика и математическая физика>>}{}
+      \resumeItemListStart
+        \resumeItem{Разработка вопросно-ответной RAG-системы для образовательной платформы NOMOTEX: ETL разнородных источников, гибридный поиск (BGE-M3) и хранение: Qdrant + PostgreSQL, диалоговая память, ссылки на источники в ответах модели.}
+        \resumeItem{Оценка качества (RAGAS) и выбор конфигурации системы. Сейчас -- внедрение на платформу.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------RESEARCH-----------
+\section{НАУЧНАЯ РАБОТА}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Convformer}: прогнозирование временных рядов}{2025 -- 2026}
+          \resumeItemListStart
+          \resumeItem{Расширил эмбеддинг Informer двухслойным сверточным блоком, добавил автоматическую декомпозицию ряда из Autoformer и заменил ProbSparse на механизм внимания FAVOR+ (Performer), работающий за линейное время.}
+          \resumeItem{На длинных горизонтах получил меньший MSE на стандартных бенчмарках (ETT, ECL и др.).}
+            \resumeItem{Препринт статьи готов, идёт работа над публикацией в журнале Q2-Q3; код и препринт: \href{https://github.com/namenick91/Convformer}{\myuline{GitHub}}.}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+%-----------HACKATHONS-----------
+\section{ХАКАТОНЫ}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{МТС True Tech Hack 2026}: GPTHub}{2026}
+          \resumeItemListStart
+            \resumeItem{Был капитаном команды из 5 человек.}
+            \resumeItem{Собрали платформу на базе OpenWebUI: маршрутизация запросов, RAG, долгосрочная память на PostgreSQL + PGVector и Deep Research через gpt-researcher.}
+            \resumeItem{Отвечал за архитектуру RAG, подбор моделей и пресетов, двухуровневую память, интеграцию Deep Research и координацию команды.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{PET-ПРОЕКТЫ}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Customer Churn} (CatBoost)}{\href{https://github.com/namenick91/ML-Workshelf\#customer-churn-prediction}{\myuline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Построил модель оттока клиентов: очистка и типизация данных, фичи, k-fold и подбор гиперпараметров в Optuna.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Multimodal RAG} для поиска фильмов}{\href{https://github.com/namenick91/rag-multimodal-movies}{\myuline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Собрал FastAPI + Qdrant + MinIO + Streamlit; использовал E5/CLIP-эмбеддинги и локальную Qwen для суммаризации.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Simpsons Character Classification} (EfficientNetV2-S)}{\href{https://github.com/namenick91/ML-Workshelf\#simpsons-character-classification}{\myuline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Обучил multi-class классификатор изображений: двухфазный fine-tuning, RandAugment, CutMix, MixUp, AdamW + Cosine и early stopping.}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Semantic Segmentation} (U-Net / SegNet)}{\href{https://github.com/namenick91/ML-Workshelf\#image-segmentation-with-cnns}{\myuline{GitHub}}}
+          \resumeItemListStart
+            \resumeItem{Сравнил модели для бинарной сегментации медицинских изображений; считал BCE, Dice, Focal и IoU, останавливал обучение по валидации.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{НАВЫКИ}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Инструменты:}{ Python, SQL, NumPy, SciPy, pandas, FastAPI, Streamlit, \LaTeX}\vspace{2pt} \\
+     \textbf{ML / DL:}{ PyTorch, scikit-learn, CatBoost, Hugging Face Transformers, RAG; оценка и бенчмаркинг LLM/VLM, прогнозирование временных рядов}\vspace{2pt} \\
+     \textbf{Инфраструктура:}{ Git, Linux, bash, Docker, vLLM, pytest, PostgreSQL + PGVector, Qdrant, MinIO}\vspace{2pt} \\
+     \textbf{Языки общения:}{ русский -- родной; английский -- свободное владение}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

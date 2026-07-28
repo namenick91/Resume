@@ -1,0 +1,207 @@
+%-------------------------
+% Resume in Latex
+% Author : Harshibar
+% Based off of: https://github.com/jakeryang/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\defaultfontfeatures{Ligatures=TeX}
+\setmainfont{Arial}
+\setsansfont{Arial}
+\setmonofont{Noto Sans Mono}[Scale=0.90]
+\usepackage[main=russian,english]{babel}
+\usepackage{tabularx}
+% only for pdflatex
+% \input{glyphtounicode}
+
+% fixed width font is configured through fontspec
+
+% light-grey
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{.08}
+
+\DeclareRobustCommand{\ebseries}{\fontseries{eb}\selectfont}
+\DeclareTextFontCommand{\texteb}{\ebseries}
+
+% custom underilne
+\usepackage{contour}
+\usepackage[normalem]{ulem}
+\renewcommand{\ULdepth}{1.8pt}
+\contourlength{0.8pt}
+\newcommand{\myuline}[1]{%
+  \uline{\phantom{#1}}%
+  \llap{\contour{white}{#1}}%
+}
+
+
+% custom font: helvetica-style
+\renewcommand*\familydefault{\sfdefault}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{0in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+\setlength{\footskip}{4.1pt}
+
+% Sections formatting - serif
+% \titleformat{\section}{
+%   \vspace{2pt} \scshape \raggedright\large % header section
+% }{}{0em}{}[\color{black} \titlerule \vspace{-5pt}]
+
+% TODO EBSERIES
+% sans serif sections
+\titleformat {\section}{
+    \bfseries \vspace{2pt} \raggedright \large % header section
+}{}{0em}{}[\color{light-grey} {\titlerule[2pt]} \vspace{-4pt}]
+
+% only for pdflatex
+% Ensure that generate pdf is machine readable/ATS parsable
+% \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & {\color{dark-grey}\small #2}\vspace{1pt}\\ % top row of resume entry
+      \textit{#3} & {\color{dark-grey} \small #4}\\ % second row of resume entry
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+      #1 & {\color{dark-grey}\small #2} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+% CHANGED default leftmargin  0.15 in
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+\color{text-grey}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Large Очкин Никита Валерьевич} \\ \vspace{5pt}
+    \small \texttt{+7 977 194-80-50} \hspace{1pt} $|$
+    \hspace{1pt} \href{mailto:nkt.ochkin@gmail.com}{\texttt{nkt.ochkin@gmail.com}} \hspace{1pt} $|$
+    \hspace{1pt} \href{https://github.com/namenick91}{\texttt{github.com/namenick91}} \hspace{1pt} $|$
+    \hspace{1pt} \texttt{Москва}
+    \\ \vspace{-3pt}
+\end{center}
+
+%-----------PROFILE-----------
+\section{ПРОФИЛЬ}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     Студент МГТУ им. Н. Э. Баумана на направлении <<Математика и компьютерные науки>>. Фокус -- прикладная финансовая аналитика: прогнозирование временных рядов, скоринговые модели, клиентская аналитика и обработка данных на Python/SQL.
+    }}
+ \end{itemize}
+
+%-----------EDUCATION-----------
+\section{ОБРАЗОВАНИЕ}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {МГТУ им. Н. Э. Баумана}{2022 -- 2026}
+      {Бакалавриат, факультет <<Фундаментальные науки>>}{Москва}
+        \resumeItemListStart
+          \resumeItem{Направление: <<Математика и компьютерные науки>>, профиль: <<Суперкомпьютерное моделирование и искусственный интеллект в инженерных задачах>>}
+          \resumeItem{Текущий средний балл: \textbf{4.31}}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------RESEARCH-----------
+\section{НАУЧНАЯ РАБОТА}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Convformer}: прогнозирование многомерных временных рядов}{2026}
+      \resumeItemListStart
+        \resumeItem{Препринт по модели прогнозирования временных рядов готовится к публикации в журнале 2--3 квартиля. Препринт: \href{https://github.com/namenick91/Convformer}{github.com/namenick91/Convformer}}
+        \resumeItem{Работал с прогнозом на длинных горизонтах для многомерных рядов: модель учитывает локальные изменения, тренд, сезонность и долгосрочные зависимости}
+        \resumeItem{На стандартных наборах данных получил более низкую среднеквадратичную ошибку (MSE) на длинных горизонтах без резкого роста вычислительных затрат}
+        \resumeItem{Работал с данными которые часто встречаются в финансах: котировки, доходности, макропоказатели и другие ряды, где важны горизонт прогноза и устойчивость ошибки}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{ПРОЕКТЫ}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Customer Churn}: клиентская аналитика и скоринг}{}
+          \resumeItemListStart
+            \resumeItem{Построил модель оценки вероятности оттока клиента на табличных данных: подготовка данных, построение признаков, кросс-валидация и подбор параметров}
+            \resumeItem{Постановка близка к банковским задачам retention и скоринга: вероятностный score, ранжирование клиентов по риску и выбор рабочего порога}
+            \resumeItem{Код: \href{https://github.com/namenick91/ML-Workshelf\#customer-churn-prediction}{github.com/namenick91/ML-Workshelf}}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{НАВЫКИ}
+ \begin{itemize}[leftmargin=0in, label={}]
+    \small{\item{
+     \textbf{Финансовая аналитика}{: временные ряды, churn / scoring, антифрод, эконометрика, извлечение данных из документов}\vspace{2pt} \\
+     \textbf{Модели и методы}{: градиентный бустинг, регрессия, нейросети, бинарная классификация, оценка качества моделей}\vspace{2pt} \\
+     \textbf{Инструменты}{: Python, SQL}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

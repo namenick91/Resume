@@ -1,0 +1,23 @@
+*.xdv
+*.gz
+*.gz
+*.out
+*.log
+*.fls
+*.fdb_latexmk
+*.blg
+*.bcf
+*.bbl-SAVE-ERROR
+*.bbl
+*.aux
+*.cut
+*.xml
+
+pdf2png.py
+
+description.md
+AGENTS.md
+CLAUDE.md
+prompt.md
+
+summer 2026/harshibars-resume/ISPRAS-dossiers
