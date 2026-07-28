@@ -123,7 +123,7 @@
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 % CHANGED default leftmargin  0.15 in
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}, itemsep=0pt, topsep=0pt]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}, itemsep=5pt, topsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.18in, itemsep=0pt, topsep=1pt, parsep=0pt, partopsep=0pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2pt}}
@@ -156,10 +156,11 @@
       {Бакалавриат, 02.03.01 <<Математика и компьютерные науки>>}{}
       	\resumeItemListStart
     	\resumeItem{\textbf{Профиль:} суперкомпьютерное моделирование и искусственный интеллект в инженерных задачах.}
-      \resumeItem{\textbf{ВКР:} <<Разработка алгоритма вопросно-ответной системы по курсу высшей математики на базе большой языковой модели>>}
+      \resumeItem{\textbf{ВКР:} <<Разработка алгоритма вопросно-ответной системы по курсу высшей математики на базе большой языковой модели>>.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 
+\vspace{-7pt}
 
 %-----------EXPERIENCE-----------
 \section{ОПЫТ РАБОТЫ}
@@ -169,22 +170,23 @@
       {Институт системного программирования им. В.\,П.~Иванникова РАН}{янв. 2026 -- н. в.}
       {Лаборант, 16-й отдел информационных систем}{}
       \resumeItemListStart
-        \resumeItem{Проведение сравнительного исследования VLM OCR-систем на различных типах документов (6 систем $\times$ 5 сценариев): инференс на GPU A100, метрики под каждый сценарий (CER/WER, PER, CDM).}
-        \resumeItem{Разработка FastAPI-сервиса для парсинга документов поверх PaddleOCR-VL-1.5: vLLM инференс, Docker-развёртывание; результат OCR преобразуется в структурированный граф документа. Micro-CER сервиса -- 3.7\%}
-        \resumeItem{Разработка бенчмарка для выбора VLM, извлекающей данные из разнотипных графиков в табличный вид (chart-to-table), с целью дальнейшего внедрения в сервис: 11 моделей, 5 датасетов, 8 метрик с bootstrap-CI.}
-        \resumeItem{Рецензирование научных статей по анализу документов методами DL.}
+        \resumeItem{Провёл сравнительное исследование VLM OCR-систем на различных типах документов (6 систем $\times$ 5 сценариев): инференс на GPU A100, метрики для каждого сценария (CER/WER, PER, CDM).}
+        \resumeItem{Разработал FastAPI-сервис для парсинга документов на базе PaddleOCR-VL-1.5: vLLM-инференс, Docker-развёртывание; результат OCR преобразуется в структурированный граф документа. Micro-CER сервиса --- 3,7 \%.}
+        \resumeItem{Разработал бенчмарк для выбора VLM, извлекающей табличные данные из разнотипных графиков (chart-to-table), с целью дальнейшего внедрения в сервис: 11 моделей, 5 датасетов, 8 метрик с bootstrap-CI.}
+        \resumeItem{Рецензировал научные статьи по анализу документов методами DL.}
       \resumeItemListEnd
 
     \resumeSubheading
       {МГТУ им. Н.Э. Баумана}{окт. 2024 -- н. в.}
       {Техник, кафедра ФН-11 <<Вычислительная математика и математическая физика>>}{}
       \resumeItemListStart
-        \resumeItem{Разработка вопросно-ответной RAG-системы для образовательной платформы NOMOTEX: ETL разнородных источников, гибридный поиск (BGE-M3) и хранение: Qdrant + PostgreSQL, диалоговая память, ссылки на источники в ответах модели.}
-        \resumeItem{Оценка качества (RAGAS) и выбор конфигурации системы. Сейчас -- внедрение на платформу.}
+        \resumeItem{Разработал вопросно-ответную RAG-систему для образовательной платформы NOMOTEX: ETL разнородных источников, гибридный поиск (BGE-M3) и хранение (Qdrant + PostgreSQL), диалоговая память, ссылки на источники в ответах модели.}
+        \resumeItem{Оценил качество (RAGAS) и выбрал конфигурацию системы. Сейчас --- внедряю на платформу.}
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
 
+\vspace{-7pt}
 
 %-----------RESEARCH-----------
 \section{НАУЧНАЯ РАБОТА}
@@ -192,13 +194,14 @@
       \resumeProjectHeading
           {\textbf{Convformer}: прогнозирование временных рядов}{2025 -- 2026}
           \resumeItemListStart
-          \resumeItem{Расширил эмбеддинг Informer двухслойным сверточным блоком, добавил автоматическую декомпозицию ряда из Autoformer и заменил ProbSparse на механизм внимания FAVOR+ (Performer), работающий за линейное время.}
+          \resumeItem{Расширил эмбеддинг Informer двухслойным свёрточным блоком, добавил автоматическую декомпозицию ряда из Autoformer и заменил ProbSparse на механизм внимания FAVOR+ (Performer), работающий за линейное время.}
           \resumeItem{На длинных горизонтах получил меньший MSE на стандартных бенчмарках (ETT, ECL и др.).}
-            \resumeItem{Препринт статьи готов, идёт работа над публикацией в журнале Q2-Q3; код и препринт: \href{https://github.com/namenick91/Convformer}{\myuline{GitHub}}.}
+            \resumeItem{Препринт статьи готов, идёт работа над публикацией в журнале уровня Q2--Q3; код и препринт: \href{https://github.com/namenick91/Convformer}{\myuline{GitHub}}.}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
 
+\vspace{-7pt}
 
 %-----------HACKATHONS-----------
 \section{ХАКАТОНЫ}
@@ -206,12 +209,13 @@
       \resumeProjectHeading
           {\textbf{МТС True Tech Hack 2026}: GPTHub}{2026}
           \resumeItemListStart
-            \resumeItem{Был капитаном команды из 5 человек.}
-            \resumeItem{Собрали платформу на базе OpenWebUI: маршрутизация запросов, RAG, долгосрочная память на PostgreSQL + PGVector и Deep Research через gpt-researcher.}
+            \resumeItem{Возглавлял команду из 5 человек.}
+            \resumeItem{Собрали платформу на базе OpenWebUI: маршрутизация запросов, RAG, долгосрочная память на PostgreSQL + pgvector и Deep Research через gpt-researcher.}
             \resumeItem{Отвечал за архитектуру RAG, подбор моделей и пресетов, двухуровневую память, интеграцию Deep Research и координацию команды.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
+\vspace{-7pt}
 
 %-----------PROJECTS-----------
 \section{PET-ПРОЕКТЫ}
@@ -219,37 +223,38 @@
       \resumeProjectHeading
           {\textbf{Customer Churn} (CatBoost)}{\href{https://github.com/namenick91/ML-Workshelf\#customer-churn-prediction}{\myuline{GitHub}}}
           \resumeItemListStart
-            \resumeItem{Построил модель оттока клиентов: очистка и типизация данных, фичи, k-fold и подбор гиперпараметров в Optuna.}
+            \resumeItem{Построил модель оттока клиентов: очистка и типизация данных, генерация признаков, k-fold и подбор гиперпараметров в Optuna.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{Multimodal RAG} для поиска фильмов}{\href{https://github.com/namenick91/rag-multimodal-movies}{\myuline{GitHub}}}
           \resumeItemListStart
-            \resumeItem{Собрал FastAPI + Qdrant + MinIO + Streamlit; использовал E5/CLIP-эмбеддинги и локальную Qwen для суммаризации.}
+            \resumeItem{Собрал сервис: FastAPI + Qdrant + MinIO + Streamlit; использовал E5/CLIP-эмбеддинги и локальную модель Qwen для суммаризации.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{Simpsons Character Classification} (EfficientNetV2-S)}{\href{https://github.com/namenick91/ML-Workshelf\#simpsons-character-classification}{\myuline{GitHub}}}
           \resumeItemListStart
-            \resumeItem{Обучил multi-class классификатор изображений: двухфазный fine-tuning, RandAugment, CutMix, MixUp, AdamW + Cosine и early stopping.}
+            \resumeItem{Обучил многоклассовый классификатор изображений: двухфазный fine-tuning, RandAugment, CutMix, MixUp, AdamW + Cosine и early stopping.}
           \resumeItemListEnd
 
       \resumeProjectHeading
           {\textbf{Semantic Segmentation} (U-Net / SegNet)}{\href{https://github.com/namenick91/ML-Workshelf\#image-segmentation-with-cnns}{\myuline{GitHub}}}
           \resumeItemListStart
-            \resumeItem{Сравнил модели для бинарной сегментации медицинских изображений; считал BCE, Dice, Focal и IoU, останавливал обучение по валидации.}
+            \resumeItem{Сравнил модели для бинарной сегментации медицинских изображений; обучал с функциями потерь BCE/Dice/Focal, качество оценивал по IoU, применял early stopping по валидационной метрике.}
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-%
+\vspace{-7pt}
+
 %-----------PROGRAMMING SKILLS-----------
 \section{НАВЫКИ}
  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
      \textbf{Инструменты:}{ Python, SQL, NumPy, SciPy, pandas, FastAPI, Streamlit, \LaTeX}\vspace{2pt} \\
      \textbf{ML / DL:}{ PyTorch, scikit-learn, CatBoost, Hugging Face Transformers, RAG; оценка и бенчмаркинг LLM/VLM, прогнозирование временных рядов}\vspace{2pt} \\
-     \textbf{Инфраструктура:}{ Git, Linux, bash, Docker, vLLM, pytest, PostgreSQL + PGVector, Qdrant, MinIO}\vspace{2pt} \\
-     \textbf{Языки общения:}{ русский -- родной; английский -- свободное владение}
+     \textbf{Инфраструктура:}{ Git, Linux, bash, Docker, vLLM, pytest, PostgreSQL + pgvector, Qdrant, MinIO}\vspace{2pt} \\
+     \textbf{Языки:}{ русский --- родной; английский --- B2--C1}
     }}
  \end{itemize}
 
